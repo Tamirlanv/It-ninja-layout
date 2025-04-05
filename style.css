@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner{
+  max-width: 1200px;
+  margin: 0 auto  ;
+}
+
+/* Font connect */
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: url('./fonts/FuturaPT/FuturaPT-Medium.woff2') format('woff2'),
+         url('./fonts/FuturaPT/FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FuturaPT';
+    src: url('./fonts/FuturaPT/FuturaPT-Bold.woff2') format('woff2'),
+         url('./fonts/FuturaPT/FuturaPT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FuturaPT';
+    src: url('./fonts/FuturaPT/FuturaPT-Bold.woff2') format('woff2'),
+         url('./fonts/FuturaPT/FuturaPT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+  }
+
+/* Global configuration */
+
+:root{
+    --primary-background-color: #fff;
+    --primary-button-color: #e4585d;
+    --primary-footer-color: #14142A;
+    --primary-font: sans-serif, 'FuturaPt';
+    --secondary-font: 'Montserrat'
+}
+
+/* Header configuration -- Desktop */
+
+.wrapper-no-conteiner{
+  height: auto;
+  width: 100%;
+  background-image: url(./images/No-conteiner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper-in-conteiner{
+  height: auto;
+  width: 100%;
+  background-image: url(./images/In-conteiner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.right-side{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-nav{
+  display: flex;
+  gap: 30px;
+}
+
+.header-links{
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: black;
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: var(--primary-button-color);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.welcome{
+  position: relative;
+}
+
+.welcome-content h1{
+  margin-top: 80px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 50px;
+
+}
+
+.welcome-content p{
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.Next{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Next span{
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.welcome-photo img {
+  width: 100%; 
+  height: auto; 
+  max-width: 428px; 
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+
+
+
+/* Footer configuration -- Desktop */
+
+/* Header configuration -- Mobile */
+
+/* Footer configuration -- Mobile */
+
+/* Index Main configuration -- Desktop */
+
+
+
+/* Index Main configuration -- Mobile */
