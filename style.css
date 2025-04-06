@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+  font-family: var(--primary-font);
+}
+
+
 .conteiner{
   max-width: 1200px;
   margin: 0 auto  ;
@@ -41,8 +46,8 @@
     --primary-background-color: #fff;
     --primary-button-color: #e4585d;
     --primary-footer-color: #14142A;
-    --primary-font: sans-serif, 'FuturaPt';
-    --secondary-font: 'Montserrat'
+    --primary-font: 'FuturaPT';
+    --secondary-font: 'Montserrat';
 }
 
 /* Header configuration -- Desktop */
@@ -51,7 +56,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
   }
   
   .header{
@@ -98,22 +104,134 @@
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
-    height: 100vh;
+    padding-bottom: 30px;
   }
 
+  .circle-button {
+    background-color: #e4585d;
+    color: #14142A;   
+    width: 50px;                     
+    height: 50px;
+    border-radius: 50%;       
+    border: none;
+    font-size: 28px;
+    font-weight: 900;    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
   
+  .circle-button:hover {
+    background-color: #d94d4d;
+    transform: scale(1.05);         
+  }
 
+  .welcome-content{
+    margin-top: 60px;
+    display: flex;
+    gap: 130px;
+  }
 
+  .welcome-text-cont{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+  }
+
+  .welcome-text-cont h1{
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .welcome-text-cont p{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  .next-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .next-btn span{
+    font-size: 20px;
+  }
 
 /* Footer configuration -- Desktop */
 
 /* Header configuration -- Mobile */
 
-/* Footer configuration -- Mobile */
+/* Footerpxonfiguration -- Mobile */
 
 /* Index Main configuration -- Desktop */
 
+.temple{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.temple-content{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.temple-photo{
+  z-index: -1;
+}
+
+.uzumaki{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.temple-element{
+  display: flex;
+  gap: 20px;
+  
+}
+
+
+.temple-el_right{
+  display: flex;  
+  gap: 10px;
+}
+
+.temple-el_right h1{
+  font-size: 24px;
+}
+
+.temple-el_left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.temple-el_left h1{
+  font-size: 24px;
+}
+
+.temple-el_left p{
+  font-family: var(--secondary-font);
+  opacity: 0.7;
+}
+
+.end{
+  justify-content: end;
+}
+
+.starter{
+  margin-left: -160px;
+}
 /* Index Main configuration -- Mobile */
 
 
