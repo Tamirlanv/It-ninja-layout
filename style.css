@@ -8,6 +8,10 @@ body{
   font-family: var(--primary-font);
 }
 
+h1{
+  font-size: 40px;
+}
+
 /* Общий стиль скроллбара */
 ::-webkit-scrollbar {
   opacity: 0.3;
@@ -414,6 +418,49 @@ body{
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* Our Knowledge */
+
+.space-for-our_knowledge{
+  background-color: #FBFCFE;
+  padding: 40px 0px;
+}
+
+.knowledge-block{
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+
+.knowledge-icon{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.knowledge-icon>img{
+  transition: transform 0.2s;
+}
+
+.knowledge-icon>img:hover{
+  transform: scale(1.05);
+}
+
+/* Feedback from students */
+
+.feedback-from-students{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 
