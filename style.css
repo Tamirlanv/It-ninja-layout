@@ -66,6 +66,14 @@ body{
     font-style: italic;
   }
 
+  @font-face {
+    font-family: 'FuturaPT';
+    src: url('./fonts/FuturaPT/FuturaPT-Demi.woff2') format('woff2'),
+         url('./fonts/FuturaPT/FuturaPT-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
 /* Global configuration */
 
 :root{
@@ -114,6 +122,7 @@ body{
   }
   
   .login-btn {
+    text-decoration: none;
     font-family: var(--primary-font);
     font-weight: 900;
     font-size: 18px;
@@ -288,11 +297,17 @@ body{
   align-items: center;
 }
 
-.courses-card{
+.courses-cards{
+  position: relative;
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.new-course.hidden {
+  visibility: hidden;
+  height: 30px; /* или высоту как у нормального блока */
 }
 
 .courses-bloock{
@@ -308,6 +323,28 @@ body{
   width: 100%;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.courses-bloock:hover{
+  transform: scale(1.05);
+
+}
+
+.opacityspan{
+  opacity: 0.6;
+}
+
+.secondback{
+  background-image: url(./images/нашикурсы/vaback.png);
+}
+
+.fourback{
+  background-image: url(./images/нашикурсы/cssback.png);
+}
+
+.fiveback{
+  background-image: url(./images/нашикурсы/butsrapback.png);
 }
 
 .left-sider{
@@ -320,10 +357,10 @@ body{
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
-  font-family: var(--primary-font);
 }
 
-.topper h1{
+.topper h2{
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -333,8 +370,14 @@ body{
   gap: 5px;
 }
 
+.course-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .new-course{
-  width: 50%;
+  width: 90px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -359,7 +402,23 @@ body{
   color: #64617A;
   font-family: var(--primary-font);
   font-weight: 400;
+  margin-top: auto;
 }
+
+.absolute-for-course{
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.courses-cards-back{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
 
 
 
