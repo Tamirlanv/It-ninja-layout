@@ -1,35 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   font-family: var(--primary-font);
 }
 
-h1{
+h1 {
   font-size: 40px;
 }
 
 /* Общий стиль скроллбара */
 ::-webkit-scrollbar {
   opacity: 0.3;
-  width: 10px;            /* Толщина вертикального скролла */
-  height: 5px;            /* Толщина горизонтального скролла */
+  width: 10px;
+  /* Толщина вертикального скролла */
+  height: 5px;
+  /* Толщина горизонтального скролла */
 }
 
 /* Фон скроллбара */
 ::-webkit-scrollbar-track {
   opacity: 0.3;
-  background: #f1f1f1;    /* Цвет фона трека */
+  background: #f1f1f1;
+  /* Цвет фона трека */
   border-radius: 10px;
 }
 
 /* Сам "ползунок" (бегунок) */
 ::-webkit-scrollbar-thumb {
   opacity: 0.3;
-  background: #f0f0f0;       /* Цвет ползунка */
+  background: #f0f0f0;
+  /* Цвет ползунка */
   border-radius: 10px;
 }
 
@@ -39,168 +43,169 @@ h1{
 }
 
 /* Контейнер(область видимого контента) */
-.conteiner{
+.conteiner {
   max-width: 1200px;
-  margin: 0 auto  ;
+  margin: 0 auto;
 }
 
 /* Font connect */
 
 @font-face {
-    font-family: 'FuturaPT';
-    src: url('./fonts/FuturaPT/FuturaPT-Medium.woff2') format('woff2'),
-         url('./fonts/FuturaPT/FuturaPT-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'FuturaPT';
-    src: url('./fonts/FuturaPT/FuturaPT-Bold.woff2') format('woff2'),
-         url('./fonts/FuturaPT/FuturaPT-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: 'FuturaPT';
+  src: url('./fonts/FuturaPT/FuturaPT-Medium.woff2') format('woff2'),
+    url('./fonts/FuturaPT/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'FuturaPT';
-    src: url('./fonts/FuturaPT/FuturaPT-Bold.woff2') format('woff2'),
-         url('./fonts/FuturaPT/FuturaPT-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-  }
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('./fonts/FuturaPT/FuturaPT-Bold.woff2') format('woff2'),
+    url('./fonts/FuturaPT/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'FuturaPT';
-    src: url('./fonts/FuturaPT/FuturaPT-Demi.woff2') format('woff2'),
-         url('./fonts/FuturaPT/FuturaPT-Demi.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('./fonts/FuturaPT/FuturaPT-Bold.woff2') format('woff2'),
+    url('./fonts/FuturaPT/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('./fonts/FuturaPT/FuturaPT-Demi.woff2') format('woff2'),
+    url('./fonts/FuturaPT/FuturaPT-Demi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
 
 /* Global configuration */
 
-:root{
-    --primary-background-color: #fff;
-    --primary-button-color: #e4585d;
-    --primary-footer-color: #14142A;
-    --primary-font: 'FuturaPT';
-    --secondary-font: 'Montserrat';
+:root {
+  --primary-background-color: #fff;
+  --primary-button-color: #e4585d;
+  --primary-footer-color: #14142A;
+  --primary-font: 'FuturaPT';
+  --secondary-font: 'Montserrat';
 }
 
 /* Header configuration -- Desktop */
-  .welcome-page{
-    background-image: url(./images/No-conteiner.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: auto;
-    padding-bottom: 30px;
-  }
-  
-  .header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-  }
-  
-  .right-side{
-    display: flex;
-    align-items: center;
-    gap: 80px;
-  }
-  
-  .header-nav{
-    display: flex;
-    gap: 30px;
-  }
-  
-  .header-links{
-    text-decoration: none;
-    font-family: var(--primary-font);
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .login-btn {
-    text-decoration: none;
-    font-family: var(--primary-font);
-    font-weight: 900;
-    font-size: 18px;
-    background-color: var(--primary-button-color);
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
+.welcome-page {
+  background-image: url(./images/No-conteiner.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  padding-bottom: 30px;
+}
 
-  .welcome-background{
-    background-image: url(./images/In-conteiner.png);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-  }
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
 
-  .circle-button {
-    background-color: #e4585d;
-    color: #14142A;   
-    width: 50px;                     
-    height: 50px;
-    border-radius: 50%;       
-    border: none;
-    font-size: 28px;
-    font-weight: 900;    
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .circle-button:hover {
-    background-color: #d94d4d;
-    transform: scale(1.05);         
-  }
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
 
-  .welcome-content{
-    margin-top: 60px;
-    display: flex;
-    gap: 130px;
-  }
+.header-nav {
+  display: flex;
+  gap: 30px;
+}
 
-  .welcome-text-cont{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px
-  }
+.header-links {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
 
-  .welcome-text-cont h1{
-    text-transform: uppercase;
-    font-size: 50px;
-  }
-  .welcome-text-cont p{
-    font-family: var(--secondary-font);
-    font-size: 18px;
-    opacity: 0.7;
-  }
+.login-btn {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-weight: 900;
+  font-size: 18px;
+  background-color: var(--primary-button-color);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-  .next-btn{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.welcome-background {
+  background-image: url(./images/In-conteiner.png);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
 
-  .next-btn span{
-    font-size: 20px;
-  }
+.circle-button {
+  background-color: #e4585d;
+  color: #14142A;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 28px;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.circle-button:hover {
+  background-color: #d94d4d;
+  transform: scale(1.05);
+}
+
+.welcome-content {
+  margin-top: 60px;
+  display: flex;
+  gap: 130px;
+}
+
+.welcome-text-cont {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px
+}
+
+.welcome-text-cont h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.welcome-text-cont p {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.next-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.next-btn span {
+  font-size: 20px;
+}
 
 /* Footer configuration -- Desktop */
 
@@ -211,7 +216,7 @@ h1{
 /* Index Main configuration -- Desktop */
 
 /* Temple section */
-.temple{
+.temple {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -219,89 +224,89 @@ h1{
   padding-bottom: 100px;
 }
 
-.temple-content{
+.temple-content {
   padding-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.temple-photo{
+.temple-photo {
   z-index: -1;
 }
 
-.uzumaki{
+.uzumaki {
   z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.temple-element{
+.temple-element {
   display: flex;
   gap: 20px;
-  
+
 }
 
 
-.temple-el_right{
-  display: flex;  
+.temple-el_right {
+  display: flex;
   gap: 10px;
 }
 
-.temple-el_right h1{
+.temple-el_right h1 {
   font-size: 24px;
 }
 
-.temple-el_left{
+.temple-el_left {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.temple-el_left h1{
+.temple-el_left h1 {
   font-size: 24px;
 }
 
-.temple-el_left p{
+.temple-el_left p {
   font-family: var(--secondary-font);
   opacity: 0.7;
 }
 
-.end{
+.end {
   justify-content: end;
 }
 
-.starter{
+.starter {
   margin-left: -160px;
 }
 
 /* Our-courses section */
 
-.courses-header{
+.courses-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.courses-header>h1{
+.courses-header>h1 {
   font-size: 40px;
 }
 
-.all-courses{
+.all-courses {
   text-decoration: none;
-  background: none;    
+  background: none;
   color: var(--primary-button-color);
-  font-family: var(--primary-font);   
+  font-family: var(--primary-font);
   border: none;
   font-size: 18px;
-  font-weight: 550;    
+  font-weight: 550;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.courses-cards{
+.courses-cards {
   position: relative;
   padding-top: 20px;
   display: grid;
@@ -311,10 +316,10 @@ h1{
 
 .new-course.hidden {
   visibility: hidden;
-  height: 30px; /* или высоту как у нормального блока */
+  height: 30px;
 }
 
-.courses-bloock{
+.courses-bloock {
   background-image: url(./images/нашикурсы/htmlback.png);
   background-position: center;
   background-size: contain;
@@ -330,45 +335,45 @@ h1{
   transition: transform 0.2s;
 }
 
-.courses-bloock:hover{
+.courses-bloock:hover {
   transform: scale(1.05);
 
 }
 
-.opacityspan{
+.opacityspan {
   opacity: 0.6;
 }
 
-.secondback{
+.secondback {
   background-image: url(./images/нашикурсы/vaback.png);
 }
 
-.fourback{
+.fourback {
   background-image: url(./images/нашикурсы/cssback.png);
 }
 
-.fiveback{
+.fiveback {
   background-image: url(./images/нашикурсы/butsrapback.png);
 }
 
-.left-sider{
+.left-sider {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.topper{
+.topper {
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
 }
 
-.topper h2{
+.topper h2 {
   font-weight: 600;
   font-size: 24px;
 }
 
-.reiting{
+.reiting {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -380,7 +385,7 @@ h1{
   gap: 10px;
 }
 
-.new-course{
+.new-course {
   width: 90px;
   display: flex;
   align-items: center;
@@ -391,14 +396,14 @@ h1{
   border-radius: 10px;
 }
 
-.course-price{
+.course-price {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 18px;
 }
 
-.continue-to{
+.continue-to {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -409,12 +414,12 @@ h1{
   margin-top: auto;
 }
 
-.absolute-for-course{
+.absolute-for-course {
   position: relative;
   padding-bottom: 120px;
 }
 
-.courses-cards-back{
+.courses-cards-back {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -422,47 +427,97 @@ h1{
 
 /* Our Knowledge */
 
-.space-for-our_knowledge{
+.space-for-our_knowledge {
   background-color: #FBFCFE;
   padding: 40px 0px;
 }
 
-.knowledge-block{
+.knowledge-block {
   display: flex;
   flex-flow: column;
   gap: 40px;
 }
 
-.knowledge-icon{
+.knowledge-icon {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.knowledge-icon>img{
+.knowledge-icon>img {
   transition: transform 0.2s;
 }
 
-.knowledge-icon>img:hover{
+.knowledge-icon>img:hover {
   transform: scale(1.05);
 }
 
 /* Feedback from students */
 
-.feedback-from-students{
+.feedback-from-students {
   padding-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.feedback-cards{
+.feedback-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+.feedback-card{
+  background-image: url(./images/Отзывыстудентов/Samurai.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  min-width: 380px;
+  background-color: #F7F7FC;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.darksamurai{
+  background-image: url(./images/Отзывыстудентов/DarkSamurai.png);
+}
+
+.ninja{
+  background-image: url(./images/Отзывыстудентов/Ninja.png);
+}
+
+.feedback-top_content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 250px;
+}
+
+.feedback-top_content>p>span{
+  color: var(--primary-button-color);
+  font-weight: 600;
+}
+
+.feedback-author{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.apostroph{
+  max-width: 42px;
+  height: auto;
+}
+
+.feedback-avatar{
+  max-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
 
 
 
@@ -474,5 +529,3 @@ h1{
 
 
 /* Index Main configuration -- Mobile */
-
-
