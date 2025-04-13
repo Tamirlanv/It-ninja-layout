@@ -1,14 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./images/Tabicon.png" type="image/x-icon">
     <title>Courses</title>
 </head>
+
 <body>
+    <div class="conteiner">
+        <header class="header">
+            <div class="left-side">
+                <a href="./index.html">
+                    <img src="./images/Logo.png" width="28px" height="auto" alt="logo" class="logo" />
+                </a>
+            </div>
+            <div class="right-side">
+                <nav class="header-nav">
+                    <a href="./courses.html" class="header-links">Курсы</a>
+                    <a href="" class="header-links">Комьюнити</a>
+                </nav>
+                <a href="" class="login-btn">
+                    <img src="./images/Profile.png" alt="Profile" /><span>Войти</span>
+                </a>
+            </div>
+        </header>
+    </div>
+    <main class="course-main">
+        <div class="welcome-page courses-background">
+            <div class="conteiner">
+                <section class="courses-welcome">
+                    <img src="./images/курсы/course-welcome-background.png" class="background-to-courses" alt="">
+                    <div class="courses-left-side">
+                        <p><a href="./index.html" class="course-header-links">Главная /</a><span class="courses-link">
+                                Курсы</span></p>
+                        <h1>Курсы</h1>
+                        <p class="course-welcome-text">
+                            Мы разработали уникальный курс и максимально автоматизировали<br> процессы, такие как
+                            проверка
+                            домашних
+                            заданий, проверка тестов,<br> отслеживание прогресса студента и начисление баллов (XP),
+                            тем<br> самым мы
+                            смогли максимально снизить стоимость.</p>
+                    </div>
+                    <div class="courses-right-side">
+                        <img src="./images/курсы/pic.png" alt="">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="conteiner">
+            <section class="courses-sort">
+                <div class="costom-sort">
+                    <div class="sort-item costomized">Все</div>
+                    <div class="sort-item">Новинки</div>
+                    <div class="sort-item">HTML</div>
+                    <div class="sort-item">CSS</div>
+                    <div class="sort-item">Vuetify</div>
+                    <div class="sort-item">Python</div>
+                    <div class="sort-item">React</div>
+                    <div class="sort-item">Bootstrap</div>
+                </div>
+                <div class="common-sort">
+                    <div class="common-item">Сортировать по:</div>
+                    <div class="common-item costomiseded">Сначала новые</div>
+                    <div class="common-item">По популярности</div>
+                </div>
+            </section>
+            <section class="our-courses">
+                <div class="courses-cards">
+                    <div class="courses-bloock">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>HTML Advanced</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span>Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/html-5.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock secondback">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Vuetify Advanced</h2>
+                                <p>Пока нет оценок</p>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/VA icon.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Python Advanced</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/python.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock fourback">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>CSS Advanced</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                    <div class="new-course hidden">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/css-3.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock fiveback">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Bootstrap</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                    <div class="new-course hidden">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/Bootstrap.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Javascript</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/javascript.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>HTML Advanced</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span>Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/html-5.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock secondback">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Vuetify Advanced</h2>
+                                <p>Пока нет оценок</p>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/VA icon.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Python Advanced</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/python.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock fourback">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>CSS Advanced</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                    <div class="new-course hidden">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/css-3.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock fiveback">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Bootstrap</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                    <div class="new-course hidden">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/Bootstrap.png" alt="icon" />
+                        </div>
+                    </div>
+                    <div class="courses-bloock">
+                        <div class="left-sider">
+                            <div class="topper">
+                                <h2>Javascript</h2>
+                                <div class="reiting">
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                    <img src="./images/нашикурсы/star.png" alt="icon" class="reiting-star" />
+                                </div>
+                                <div class="course-meta">
+                                    <div class="new-course">
+                                        <img src="./images/нашикурсы/surface1.png" alt="icon" />
+                                        <span>Новый</span>
+                                    </div>
+                                    <div class="course-price">
+                                        <img src="./images/нашикурсы/coin 1.png" alt="icon" />
+                                        <span>150 токенов</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="continue-to" href="./course_about.html">
+                                <span class="opacityspan">Подробнее</span>
+                                <img src="./images/нашикурсы/Arrow - Right.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="right-sider">
+                            <img src="./images/нашикурсы/javascript.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="conteiner">
+            <div class="footer-content">
+                <img src="./images/footer/footerlogo.png" alt="logo" class="footer-logo">
+                <nav class="footer-navigation">
+                    <div class="link-block1">
+                        <p>Общие ссылки</p>
+                        <ul class="link-list_footer">
+                            <li class="footer-links">Отзывы о наших курсах</li>
+                            <li class="footer-links">Политика конфиденциальности</li>
+                            <li class="footer-links">Условия использования</li>
+                            <li class="footer-links">Цены и оплата</li>
+                            <li class="footer-links">Комьюнити</li>
+                        </ul>
+                    </div>
+                    <div class="link-block2">
+                        <p>Наши курсы</p>
+                        <ul class="link-list_footer">
+                            <li class="footer-links">HTML/CSS Advanced</li>
+                            <li class="footer-links">Bootstrap 4</li>
+                            <li class="footer-links">VuejS</li>
+                            <li class="footer-links">Javascript</li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer-feedback">
+                    <p>Есть вопросы? Найдем ответы</p>
+                    <div class="feedback-botton">Написать нам</div>
+                    <div class="social-media-links">
+                        <a href="" class="social-media-links">
+                            <img src="./images/footer/twitter.svg" alt="">
+                        </a>
+                        <a href="" class="social-media-links">
+                            <img src="./images/footer/facebook.svg" alt="">
+                        </a>
+                        <a href="" class="social-media-links">
+                            <img src="./images/footer/instagramm.svg" alt="">
+                        </a>
+                        <a href="" class="social-media-links">
+                            <img src="./images/footer/vk.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

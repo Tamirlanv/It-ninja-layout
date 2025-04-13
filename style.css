@@ -100,12 +100,17 @@ h1 {
   padding-bottom: 30px;
 }
 
+.courses-main-background{
+  background-color: #F7F7FC;
+}
+
 .header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .right-side {
@@ -120,10 +125,10 @@ h1 {
 }
 
 .header-links {
+  font-weight: 600;
   text-decoration: none;
   font-family: var(--primary-font);
   color: black;
-  font-weight: bold;
   font-size: 18px;
 }
 
@@ -172,7 +177,7 @@ h1 {
 }
 
 .welcome-content {
-  margin-top: 60px;
+  padding-top: 60px;
   display: flex;
   gap: 130px;
 }
@@ -567,3 +572,103 @@ h1 {
   font-size: 18px;
   font-weight: 600;
 }
+
+
+/* Courses -- Desktop */
+
+.course-main{
+  padding-bottom: 120px;
+}
+
+.courses-welcome{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: auto;
+}
+
+.courses-background{
+  background-color: #F7F7FC;
+}
+
+.course-welcome-text{
+  margin-top: 30px;
+  font-size: 18px;
+  opacity: 0.8;
+  font-family: var(--secondary-font);
+}
+
+.courses-welcome h1{
+  margin-left: 50px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 100px;
+}
+
+.background-to-courses{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 67%;
+  height: auto;
+  z-index: -1;
+}
+
+.course-header-links{
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 0.7;
+  text-decoration: none;
+  color: #555;
+}
+
+.courses-link{
+  color: #d94d4d;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.courses-sort{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.costom-sort{
+  display: flex;
+  gap: 20px;
+}
+
+.sort-item{
+  padding: 8px 16px;
+  border-radius: 70px;
+  background-color: #F7F7FC;
+  color: #64617A;
+}
+
+.costomized{
+  background-color: var(--primary-button-color);
+  color: white;
+}
+
+.common-sort{
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.common-item{
+  color: #64617A;
+}
+
+.costomiseded{
+  color: #d94d4d;
+}
+
+
