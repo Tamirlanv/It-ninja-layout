@@ -86,6 +86,7 @@ h1 {
   --primary-background-color: #fff;
   --primary-button-color: #e4585d;
   --primary-footer-color: #14142A;
+  --non-active-text: #64617A;
   --primary-font: 'FuturaPT';
   --secondary-font: 'Montserrat';
 }
@@ -384,7 +385,8 @@ h1 {
 }
 
 .new-course {
-  width: 90px;
+  max-width: 90px;
+  max-height: 30px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -549,9 +551,10 @@ h1 {
 }
 
 .feedback-botton{
+  color: white;
   font-size: 18px;
   background-color: var(--primary-button-color);
-  padding: 10px 40px;
+  padding: 10px 30px;
   border-radius: 5px;
   max-width: max-content;
 }
@@ -665,10 +668,256 @@ h1 {
 
 .common-item{
   color: #64617A;
+  font-family: var(--primary-font);
 }
 
 .costomiseded{
   color: #d94d4d;
 }
 
+
+/* About courses -- Desktop */
+
+.breadcrumbs {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  white-space: nowrap; 
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+}
+
+.gray-link {
+  color: #555;
+  opacity: 0.7;
+}
+
+.red-link {
+  color: #d94d4d;
+  opacity: 1;
+}
+
+.info-box {
+  display: flex;
+  background-color: #f4f3fa;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  max-width: 370px;
+  height: auto;
+}
+
+.info-text p {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.info-icon{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.about-welcome{
+  position: relative;
+  z-index: 1;
+}
+
+.courses-abcolute{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: -1;
+}
+
+.about-welcome-content{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-welcome-right>p{
+  opacity: 0.7;
+}
+
+.about-welcome-left{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.about-welcome-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-paragraph{
+  max-width: 620px;
+  color: var(--non-active-text);
+  font-size: 18px;
+}
+
+.detail-info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background-color: #F7F7FC;
+  border-radius: 50px;
+}
+
+.margining{
+  margin-top: 20px;
+}
+
+.video-reiting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.video-frame {
+  grid-column: span 2; 
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: none;
+}
+
+.list-section {
+  background-color: #f7f7fc;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  color: #333;
+}
+
+
+.courses-about-main{
+  padding-bottom: 120px;
+}
+
+.students{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.student{
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.boldy{
+  font-weight: 600;
+}
+
+.courses-info{
+  padding-top: 40px;
+}
+
+.information-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tab-menu {
+  display: flex;
+  position: relative;
+  width: max-content;
+  border-bottom: 2px solid #ccc;
+  gap: 30px;
+}
+
+.tab {
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.tab.active {
+  opacity: 1; 
+}
+
+.indicator {
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  background-color: red;
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+
+.course-addiction-info{
+  background-color: #F7F7FC;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+
+
+.text-block {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+.text-block p {
+  margin-bottom: 16px;
+}
+
+.text-block ul {
+  margin-left: 20px;
+  padding-left: 0;
+  list-style-type: disc;
+}
+
+.courses-info {
+  margin-top: 40px;
+  width: 66%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.information-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.speaker-skills{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remming{
+  font-size: 1.5em;
+}
 
