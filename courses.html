@@ -26,7 +26,7 @@
                     <a href="./courses.html" class="header-links">Курсы</a>
                     <a href="" class="header-links">Комьюнити</a>
                 </nav>
-                <a href="" class="login-btn">
+                <a href="https://accounts.google.com/?hl=RU" target="_blank" class="login-btn">
                     <img src="./images/Profile.png" alt="Profile" /><span>Войти</span>
                 </a>
             </div>
@@ -42,11 +42,11 @@
                                 Курсы</span></p>
                         <h1>Курсы</h1>
                         <p class="course-welcome-text">
-                            Мы разработали уникальный курс и максимально автоматизировали<br> процессы, такие как
+                            Мы разработали уникальный курс и максимально автоматизировали процессы, такие как
                             проверка
                             домашних
-                            заданий, проверка тестов,<br> отслеживание прогресса студента и начисление баллов (XP),
-                            тем<br> самым мы
+                            заданий, проверка тестов, отслеживание прогресса студента и начисление баллов (XP),
+                            тем самым мы
                             смогли максимально снизить стоимость.</p>
                     </div>
                     <div class="courses-right-side">
@@ -68,8 +68,8 @@
                     <div class="sort-item">Bootstrap</div>
                 </div>
                 <div class="common-sort">
-                    <div class="common-item">Сортировать по:</div>
-                    <div class="common-item costomiseded">Сначала новые</div>
+                    <div class="common-item non-clickable">Сортировать по:</div>
+                    <div class="common-item red-link">Сначала новые</div>
                     <div class="common-item">По популярности</div>
                 </div>
             </section>
@@ -467,25 +467,47 @@
                 </nav>
                 <div class="footer-feedback">
                     <p>Есть вопросы? Найдем ответы</p>
-                    <div class="feedback-botton">Написать нам</div>
+                    <a href="mailto:pididijonson@gmail.com?subject=Вопрос%20по%20курсам&body=Здравствуйте!%20Хочу%20уточнить..."
+                        class="feedback-botton">
+                        Написать нам
+                    </a>
                     <div class="social-media-links">
-                        <a href="" class="social-media-links">
-                            <img src="./images/footer/twitter.svg" alt="">
+                        <a href="https://x.com/home" target="_blank" class="social-media-links">
+                            <img src="./images/footer/twitter.svg" alt="img">
                         </a>
-                        <a href="" class="social-media-links">
-                            <img src="./images/footer/facebook.svg" alt="">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-media-links">
+                            <img src="./images/footer/facebook.svg" alt="img">
                         </a>
-                        <a href="" class="social-media-links">
-                            <img src="./images/footer/instagramm.svg" alt="">
+                        <a href="https://www.instagram.com/" target="_blank" class="social-media-links">
+                            <img src="./images/footer/instagramm.svg" alt="img">
                         </a>
-                        <a href="" class="social-media-links">
-                            <img src="./images/footer/vk.svg" alt="">
+                        <a href="https://vk.com/" target="_blank" class="social-media-links">
+                            <img src="./images/footer/vk.svg" alt="img">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        const sortItems = document.querySelectorAll('.sort-item');
+        sortItems.forEach(item => {
+            item.addEventListener('click', () => {
+                sortItems.forEach(i => i.classList.remove('costomized'));
+                item.classList.add('costomized');
+            });
+        });
+        const commonItems = document.querySelectorAll('.common-item');
+
+        commonItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (!item.classList.contains("non-clickable")) {
+                    commonItems.forEach(i => i.classList.remove('red-link'));
+                    item.classList.add('red-link');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
