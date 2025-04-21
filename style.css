@@ -579,7 +579,6 @@ h1 {
 }
 
 .feedback-botton {
-  margin-top: 10px;
   color: white;
   font-size: 18px;
   background-color: var(--primary-button-color);
@@ -589,6 +588,7 @@ h1 {
   text-decoration: none;
 }
 .feedlink{
+  margin-top: 30px;
   text-decoration: none;
 }
 
@@ -1272,6 +1272,9 @@ h1 {
   }
   .info-item {
     padding: 8px 12px;
+  }
+  .feedlink{
+    margin-top: 0;
   }
 }
 
